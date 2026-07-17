@@ -19,16 +19,17 @@ int main(void){
 
   for(int i=0; i<n; i++){
     int value;
-    printf("Number%i", i+1);
+    printf("Number%i: ", i+1);
     scanf("%i", &value);
     head = insert(head, value);
   }
 
   node *ptr = head;
   while(ptr != NULL){
-    printf("%i", ptr -> number);
+    printf("%i ", ptr -> number);
     ptr = ptr -> next;
   }
+  printf("\n");
 
   ptr = head;
   while(ptr != NULL){
