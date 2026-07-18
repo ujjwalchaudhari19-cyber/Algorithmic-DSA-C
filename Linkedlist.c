@@ -28,12 +28,42 @@ int main(void){
   }
   printf("\n");
 
+
+  node *tmp =head;
+  node *prev = NULL;
+  int dlte;
+  printf("Node to be eliminated: ");
+  scanf("%i", &dlte);
+  while(tmp != NULL && tmp -> number != dlte){
+    prev = tmp;
+    tmp = tmp ->next;
+  }
+  if(tmp == NULL){
+    printf("Not found\n");
+  }
+
+  else if(prev == NULL){
+    head = tmp -> next;
+  }
+  else{
+    prev -> next = tmp->next;
+  }
+  free(tmp);
+
+  node *list = head;
+  while(list != NULL){
+    printf("%i ", list -> number);
+    list = list -> next;
+  }
+  printf("\n");
+
   ptr = head;
   while(ptr != NULL){
     node *next = ptr ->next;
     free(ptr);
     ptr = next;
   }
+
   return 0;
 }
 
