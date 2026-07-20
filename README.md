@@ -32,6 +32,18 @@ Currently, this project includes:
   - Preorder traversal
   - Postorder traversal
 
+- Graph (Adjacency List Representation)
+  - Graph creation
+  - Edge insertion
+  - Weighted edge representation
+  - Graph traversal using an adjacency list
+
+- Dijkstra's Shortest Path Algorithm
+  - Single-source shortest path computation
+  - Distance array generation
+  - Visited node tracking
+  - Shortest path calculation on weighted graphs
+
 Additional data structures and algorithms will be added as the project grows.
 
 ---
@@ -42,4 +54,4 @@ I chose C because it exposes the underlying mechanics that higher-level language
 
 Implementing these data structures in C requires manual memory management, explicit pointer manipulation, and careful control over data layout. Building them from scratch provides a much deeper understanding of how dynamic memory allocation and algorithmic operations work internally.
 
-Rather than using library implementations, this project focuses on understanding the computational foundations that underpin operating systems, compilers, databases, and modern machine learning frameworks.
+Rather than using library implementations, this project focuses on understanding the computational foundations that underpin operating systems, compilers, databases, networking software, and modern machine learning frameworks.
